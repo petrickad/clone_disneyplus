@@ -6,6 +6,10 @@
     background: url(../images/hero_desktop.jpeg);
     text-align: center;
     background-size: cover;
+
+    li{
+        list-style: none;
+    }
      
     &__content{
         max-width: 540px;
