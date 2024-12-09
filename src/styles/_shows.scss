@@ -4,6 +4,10 @@
     padding: 2vw 5.6vw;
     min-height: 50vw;
 
+    @media (max-width: 768px) {
+        padding: 22vw 5.6vw
+    }
+
     li{
         list-style: none;
     }
@@ -13,6 +17,10 @@
         display: none;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 24px;
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr 1fr;
+        }
         
         &--is--active{
             display: grid;
@@ -29,6 +37,12 @@
     &__tabs{
         display: flex;
         justify-content: center;
+        
+        @media (max-width: 768px) {
+            
+            white-space: nowrap;
+            overflow-x: scroll;
+        }
         &__button {
             color: variaveis.$corTextoSecundario;
             font-size: 20px;
@@ -42,6 +56,10 @@
             
             &--is--active{
                 border-color: variaveis.$corTextoSecundario;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 16px;
             }
         }
     }

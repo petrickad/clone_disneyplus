@@ -25,6 +25,17 @@
         padding: 8px 36px;
         display: flex;
         justify-content: space-between;
+
+        
+        @media (max-width: 768px) {
+            padding: 0 12px 0 20px;
+        }
+        ul{
+            li{
+                display: flex;
+                align-items: center;
+            }
+        }
     }
 
     &__logo{
@@ -32,6 +43,10 @@
         width: 100%;
         margin: 5px;
         transition: opacity .5s ease;
+        
+        @media (max-width: 768px) {
+            max-width: 64px;
+        }
     }
 
     &__links{
@@ -49,5 +64,12 @@
         height: 40px;
         display: flex;
         align-items: center;
+        
+        @media (max-width: 768px) {
+            font-size: 13px;
+            padding: 2px 11px;
+            height: 30px;
+            letter-spacing: 0;
+        }
     }
 }
